@@ -1,0 +1,35 @@
+surveyid,qid,qheading,qfamily,choice_id,choice_text
+119306832,135346263,Please select one choice,multiple_choice,988763686,One
+119306832,135346263,Please select one choice,multiple_choice,988763687,Two
+119306832,135346263,Please select one choice,multiple_choice,988763688,Three
+119306832,135346632,How likely is it that you would recommend this company to a friend or colleague?,matrix,988766268,Not at all likely - 0
+119306832,135346632,How likely is it that you would recommend this company to a friend or colleague?,matrix,988766269,1
+119306832,135346632,How likely is it that you would recommend this company to a friend or colleague?,matrix,988766270,2
+119306832,135346632,How likely is it that you would recommend this company to a friend or colleague?,matrix,988766271,3
+119306832,135346632,How likely is it that you would recommend this company to a friend or colleague?,matrix,988766272,4
+119306832,135346632,How likely is it that you would recommend this company to a friend or colleague?,matrix,988766273,5
+119306832,135346632,How likely is it that you would recommend this company to a friend or colleague?,matrix,988766274,6
+119306832,135346632,How likely is it that you would recommend this company to a friend or colleague?,matrix,988766275,7
+119306832,135346632,How likely is it that you would recommend this company to a friend or colleague?,matrix,988766276,8
+119306832,135346632,How likely is it that you would recommend this company to a friend or colleague?,matrix,988766277,9
+119306832,135346632,How likely is it that you would recommend this company to a friend or colleague?,matrix,988766278,Extremely likely - 10
+119306832,135346634,What is your gender?,single_choice,988766285,Female
+119306832,135346634,What is your gender?,single_choice,988766287,Male
+119306832,135346635,What is your age?,single_choice,988766288,18 to 24
+119306832,135346635,What is your age?,single_choice,988766289,25 to 34
+119306832,135346635,What is your age?,single_choice,988766290,35 to 44
+119306832,135346635,What is your age?,single_choice,988766291,45 to 54
+119306832,135346635,What is your age?,single_choice,988766292,55 to 64
+119306832,135346635,What is your age?,single_choice,988766293,65 to 74
+119306832,135346635,What is your age?,single_choice,988766294,75 or older
+119306832,135346636,What is your first name?,open_ended,,
+119306832,135346637,What is your last name?,open_ended,,
+119306832,135346640,What is the highest level of school you have completed or the highest degree you have received? ,single_choice,988766305,Less than high school degree
+119306832,135346640,What is the highest level of school you have completed or the highest degree you have received? ,single_choice,988766306,"High school degree or equivalent (e.g., GED)"
+119306832,135346640,What is the highest level of school you have completed or the highest degree you have received? ,single_choice,988766307,Some college but no degree
+119306832,135346640,What is the highest level of school you have completed or the highest degree you have received? ,single_choice,988766308,Associate degree
+119306832,135346640,What is the highest level of school you have completed or the highest degree you have received? ,single_choice,988766309,Bachelor degree
+119306832,135346640,What is the highest level of school you have completed or the highest degree you have received? ,single_choice,988766310,Graduate degree
+119306832,135347554,Please enter your comments,open_ended,,
+119306832,135347734,What changes would this service have to make for you to give it a higher rating?,open_ended,,
+119306832,135348079,At which location do you work?,open_ended,,

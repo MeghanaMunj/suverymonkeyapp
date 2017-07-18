@@ -1,0 +1,6 @@
+{
+    "package_code": "surveymonkey", 
+    "module_class_name": "surveymonkey", 
+    "entry_module_name": "surveymonkey_app_interface", 
+    "relative_path": "surveymonkey"
+}

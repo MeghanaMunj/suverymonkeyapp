@@ -1,0 +1,37 @@
+surveyid,qid,qheading,qfamily,choice_id,choice_text
+119545033,137798396,Please select one choice,multiple_choice,1006009997,One
+119545033,137798396,Please select one choice,multiple_choice,1006009998,Two
+119545033,137798396,Please select one choice,multiple_choice,1006009999,Three
+119545033,137798396,Please select one choice,multiple_choice,other,Other (please specify)
+119545033,137798397,How likely is it that you would recommend this company to a friend or colleague?,matrix,1006010001,Not at all likely - 0
+119545033,137798397,How likely is it that you would recommend this company to a friend or colleague?,matrix,1006010002,1
+119545033,137798397,How likely is it that you would recommend this company to a friend or colleague?,matrix,1006010003,2
+119545033,137798397,How likely is it that you would recommend this company to a friend or colleague?,matrix,1006010004,3
+119545033,137798397,How likely is it that you would recommend this company to a friend or colleague?,matrix,1006010005,4
+119545033,137798397,How likely is it that you would recommend this company to a friend or colleague?,matrix,1006010006,5
+119545033,137798397,How likely is it that you would recommend this company to a friend or colleague?,matrix,1006010007,6
+119545033,137798397,How likely is it that you would recommend this company to a friend or colleague?,matrix,1006010008,7
+119545033,137798397,How likely is it that you would recommend this company to a friend or colleague?,matrix,1006010009,8
+119545033,137798397,How likely is it that you would recommend this company to a friend or colleague?,matrix,1006010010,9
+119545033,137798397,How likely is it that you would recommend this company to a friend or colleague?,matrix,1006010011,Extremely likely - 10
+119545033,137798398,What is your gender?,single_choice,1006010015,Female
+119545033,137798398,What is your gender?,single_choice,1006010016,Male
+119545033,137798399,What is your age?,single_choice,1006010017,18 to 24
+119545033,137798399,What is your age?,single_choice,1006010018,25 to 34
+119545033,137798399,What is your age?,single_choice,1006010019,35 to 44
+119545033,137798399,What is your age?,single_choice,1006010020,45 to 54
+119545033,137798399,What is your age?,single_choice,1006010021,55 to 64
+119545033,137798399,What is your age?,single_choice,1006010022,65 to 74
+119545033,137798399,What is your age?,single_choice,1006010023,75 or older
+119545033,137798400,What is your first name?,open_ended,,
+119545033,137798401,What is your last name?,open_ended,,
+119545033,137798402,What is the highest level of school you have completed or the highest degree you have received? ,single_choice,1006010026,Less than high school degree
+119545033,137798402,What is the highest level of school you have completed or the highest degree you have received? ,single_choice,1006010027,"High school degree or equivalent (e.g., GED)"
+119545033,137798402,What is the highest level of school you have completed or the highest degree you have received? ,single_choice,1006010028,Some college but no degree
+119545033,137798402,What is the highest level of school you have completed or the highest degree you have received? ,single_choice,1006010029,Associate degree
+119545033,137798402,What is the highest level of school you have completed or the highest degree you have received? ,single_choice,1006010030,Bachelor degree
+119545033,137798402,What is the highest level of school you have completed or the highest degree you have received? ,single_choice,1006010031,Graduate degree
+119545033,137798402,What is the highest level of school you have completed or the highest degree you have received? ,single_choice,other,Other (please specify)
+119545033,137798403,Please enter your comments,open_ended,,
+119545033,137798404,What changes would this service have to make for you to give it a higher rating?,open_ended,,
+119545033,137798405,At which location do you work?,open_ended,,

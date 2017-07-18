@@ -1,0 +1,89 @@
+{
+    "module_name": "SurveyMonkey", 
+    "module_type": "web_analytics", 
+    "USER_INPUT_JSON": {
+        "capability": {
+            "ds_config_validation_mode": "AUTO", 
+            "preview_enabled": false, 
+            "minimum_schedule_frequency": 0, 
+            "config_validation_required": true, 
+            "schedule_type": "MOMENT"
+        }, 
+        "fields": {
+            "surveys": {
+                "long_desc": "Surveys", 
+                "server_auto_suggest": true, 
+                "dependent_on": false, 
+                "key": "surveys", 
+                "placeholder": "", 
+                "default_value": null, 
+                "server_validate": false, 
+                "pattern": null, 
+                "required": true, 
+                "short_desc": "Surveys", 
+                "label": "Surveys", 
+                "type": "SINGLE_SELECT_LIST"
+            },
+            "download": {
+                "long_desc": "Download Type", 
+                "server_auto_suggest": true, 
+                "dependent_on": false, 
+                "key": "download", 
+                "placeholder": "", 
+                "default_value": null, 
+                "server_validate": false, 
+                "pattern": null, 
+                "required": true, 
+                "short_desc": "Download Type", 
+                "label": "Download Types", 
+                "type": "SINGLE_SELECT_LIST"
+            }
+        }, 
+        "ux": {
+            "attributes": {
+                "surveys": {
+                    "items": [], 
+                    "ui_type": "", 
+                    "onChange": "", 
+                    "list_type": "DYNAMIC", 
+                    "size": null
+                },
+                "download": {
+                    "items": [], 
+                    "ui_type": "", 
+                    "onChange": "", 
+                    "list_type": "DYNAMIC", 
+                    "size": null
+                }
+            }, 
+            "edit_layout": [], 
+            "layout": [
+                {
+                    "width": {
+                        "value": "100", 
+                        "unit": "%"
+                    }, 
+                    "classes": "", 
+                    "type": "field", 
+                    "key": "surveys"
+                },
+                {
+                    "width": {
+                        "value": "100", 
+                        "unit": "%"
+                    }, 
+                    "classes": "", 
+                    "type": "field", 
+                    "key": "download"
+                }
+            ]
+        }
+    }, 
+    "AUTH": {
+      
+        
+	   "has_profiles": false, 
+        "type": "OAUTH2"
+    }, 
+    "module_code": "surveymonkey"
+}

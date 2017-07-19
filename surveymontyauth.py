@@ -32,13 +32,8 @@ PORT_NUMBER = 8000
 api_key = "testing"
 
 '''
-#user id - megmunj
-client_id = 'tqNnSkU9RJ-YEfWN0g_z5g'
-client_secret = '41988752743902965171575396807070453910'
 '''
-#user id - devmammoth
-client_id = 'iTrVyTsOTrmnfNCOUaThNA'
-client_secret = "111213644395006718153390869016200438262 "
+
 
 def exchange_code_for_token(auth_code, client_secret, client_id, redirect_uri):
     oauth_save_url = "http://127.0.0.1"
@@ -79,14 +74,16 @@ def oauth_dialog(client_id, redirect_uri):
 if __name__ == "__main__":
     #client_id = "oExDyiCTQOKf-oYOzXzE0w"
     #client_secret = "231452587066024730312549141434044897569"
+    
+    #user id - megmunj
     '''
-    #user id megmunj
     client_id = 'tqNnSkU9RJ-YEfWN0g_z5g'
-    client_secret = '41988752743902965171575396807070453910'     
+    client_secret = '41988752743902965171575396807070453910'
     '''
-    #user id - devmammoth
-    client_id = 'iTrVyTsOTrmnfNCOUaThNA'
-    client_secret = "111213644395006718153390869016200438262"
+    #user id - devmammoth 
+    #This client id is for private app- mammothsur
+    client_id = 'gKa5cG6cSWmMOq6Io8CyJg'
+    client_secret = "294225449322316158565469283108629677736"
     
     # Load oauth dialog and take user input
     REDIRECT_URI = oauth_dialog( client_id, REDIRECT_URI)
@@ -164,9 +161,15 @@ if __name__ == "__main__":
         print("Survey Details - ", i,'----',lt_surveydetails)
         i = i + 1'''
     print('Get surveys with response only *************************')
-    lt_respresult = lv_surveymonkey.get_surveys_with_response()
-    print(lt_respresult)
-    
+    lt_respresult = lv_surveymonkey.get_surveys()
+    print('Lenght of the Survey Result is  --------------------------------',len(lt_respresult.get('data')))
+    #get_surveys_with_response()
+    i = 1
+    lt_sur = lt_respresult.get('data')
+    for lw_result in lt_sur:
+        print('Line ----' , i , lw_result)
+        i = i + 1
+    '''
     print('Get Survey responses **************************************')
     i = 1
     for lw_survey in lt_respresult['data']:
@@ -177,14 +180,14 @@ if __name__ == "__main__":
         #    continue
         
         lv_survey = surveymonkeydatafetch.SurveyDetails(lv_surveymonkey.client,lw_survey['id'])
-        '''
+        
         lt_error = lv_survey.get_questions()
         if "status" in lt_error:
             print('Error in fetching the questions')
         print('Questions for the survey are ------',lw_survey['id'])
         lt_error = lv_survey.get_question_details()
         if "status" in lt_error:
-            print('Error in fetching the questions')'''
+            print('Error in fetching the questions')
         lt_error = lv_survey.get_bulk_response()
         if "status" in lt_error:
            print('Error in fetching the Buld Response')
@@ -195,13 +198,13 @@ if __name__ == "__main__":
         #lv_survey.get_response_formatted()
         lv_survey.download_questions_veritcal_format()
         lv_survey.download_survey_response_vertical_format()
-        '''lt_error = lv_survey.get_responses()
+        lt_error = lv_survey.get_responses()
         if "status" in lt_error:
             print('Error in fetching the response questions')
         for lw_response in lv_survey.lt_responses:
             lv_response = surveymonkeydatafetch.SurveyResponse(lv_surveymonkey.client,lw_response['href'])
-        '''
-        '''
+        
+        
         with open('testcol.csv','wb') as lv_file:
             wr = csv.writer(lv_file,quoting=csv.QUOTE_ALL)
             wr.writerow(lv_survey.header)

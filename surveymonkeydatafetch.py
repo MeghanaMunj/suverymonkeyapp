@@ -519,7 +519,10 @@ class ApiService(object):
             #pass the page parameter
             lt_params["page"] = lv_current_page
             #get the data for that page
-            lt_result = self.get_data(lv_url,lt_params)
+            lv_pageurl = lv_url + '?page=' + str(lv_current_page)
+            lt_result = self.get_data(lv_pageurl)
+            print('Survey output for page -----',lv_current_page)
+            print(lt_result)
             if lt_result.get('status') !=0:
                return lt_result
             #append the survey entries to the final array

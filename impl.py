@@ -13,7 +13,7 @@ from threep.base import ThreePBase
 from sdk.utils import get_key_value_label, make_kv_list
 
 # Insert your import statements here
-from runtime_import.libs.SurveyMonkey.util import surveymonkeyDataYielder
+from runtime_import.libs.suverymonkeyapp.util import surveymonkeyDataYielder
 import urllib
 import urllib2
 import surveymonkeydatafetch

@@ -65,8 +65,12 @@ class surveymonkeyDataYielder(DataYielder):
         #['surveyid','rid','qid','qheading','qfamily','choice_id','choice_text','text']
         ds_config_key = self.config_key
         identity_key = self.identity_key
-       
-        lv_download = 'Q' 
+        self.identity_config = self.storage_handle.get(sdkconst.NAMESPACES.IDENTITIES,
+                                                       identity_key)
+
+        self.ds_config = self.storage_handle.get(identity_key, ds_config_key)
+
+        lv_download = self.ds_config.get('download')
         if lv_download == 'Q':
             self.knowledge = [{
             'internal_name': 'surveyid',
@@ -144,10 +148,6 @@ class surveymonkeyDataYielder(DataYielder):
         
             
         
-        self.identity_config = self.storage_handle.get(sdkconst.NAMESPACES.IDENTITIES,
-                                                       identity_key)
-
-        self.ds_config = self.storage_handle.get(identity_key, ds_config_key)
 
     def reset(self):
         """

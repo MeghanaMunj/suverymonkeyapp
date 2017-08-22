@@ -45,14 +45,10 @@ class surveymonkeyManager(ThreePBase):
         SM_API_BASE = "https://api.surveymonkey.net"
         ACCESS_TOKEN_ENDPOINT = "/oauth/authorize"
         REDIRECT_URI = "https://redirect.mammoth.io/redirect/oauth2"
-        '''
-        #user id - megmunj@gmail.com
-        client_id = "oExDyiCTQOKf-oYOzXzE0w"
-        client_secret = "231452587066024730312549141434044897569"
-        '''
-        #user id - devmammoth 
-        client_id = "uZ96HzyISGWErTw4wyyUfw"
-        client_secret = "81506191360428165871720130634287353605"
+
+        
+        client_id = self.api_config.get("client_id")
+        client_secret = self.api_config.get("client_secret")
         
         
         url_params = urllib.urlencode({
@@ -60,7 +56,7 @@ class surveymonkeyManager(ThreePBase):
             'client_id': client_id,
             'response_type': 'code'})        
         oauth_url = SM_API_BASE + ACCESS_TOKEN_ENDPOINT + '?' + url_params
-        oauth_save_url = "http://localhost:6346/sandbox?integration_key=surveymonkey"
+        oauth_save_url = self.api_config.get("oauth_save_url")
         auth_spec["AUTH_URL"] = oauth_url + "&state=" + urllib2.quote(oauth_save_url)
         
         return auth_spec
@@ -78,12 +74,13 @@ class surveymonkeyManager(ThreePBase):
             const.IDENTITY_FIELDS.NAME: params.get(const.IDENTITY_FIELDS.NAME),
             #sdkconst.COMMON_IDENTITY_FIELDS.NAME: params.get(const.IDENTITY_FIELDS.NAME, 'untitled'),
         }
-        client_id = "uZ96HzyISGWErTw4wyyUfw"
-        client_secret = "81506191360428165871720130634287353605"
+        client_id = self.api_config.get("client_id")
+        client_secret = self.api_config.get("client_secret")
         lv_auth_code = params.get("code")
         SM_API_BASE = "https://api.surveymonkey.net"
         ACCESS_TOKEN_ENDPOINT = "/oauth/token"
-        oauth_save_url = "http://localhost:6346/sandbox?integration_key=surveymonkey"
+        
+        oauth_save_url = self.api_config.get("oauth_save_url")
         REDIRECT_URI = "https://redirect.mammoth.io/redirect/oauth2"
         REDIRECT_URI = REDIRECT_URI + "&state=" + urllib2.quote(oauth_save_url)
         #REDIRECT_URI = "http://http://127.0.0.1"
